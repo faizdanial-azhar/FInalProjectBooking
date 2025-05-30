@@ -1,4 +1,4 @@
-module com.example.finalprojectbooking {
+module FInalProjectBooking {
     requires javafx.controls;
     requires javafx.fxml;
 
