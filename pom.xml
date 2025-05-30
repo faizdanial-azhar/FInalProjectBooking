@@ -41,6 +41,20 @@
     </dependencies>
 
     <build>
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.txt</include>
+                    <include>**/*.jpg</include>
+                    <include>**/*.jpeg</include>
+                    <include>**/*.png</include>
+                </includes>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+            </resource>
+        </resources>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -60,9 +74,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>
-                                com.example.finalprojectbooking/StudentAuthGUI.StudentAuthGUI
-                            </mainClass>
+                            <mainClass>StudentAuthGUI.StudentAuthGUI</mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
                             <jlinkImageName>app</jlinkImageName>

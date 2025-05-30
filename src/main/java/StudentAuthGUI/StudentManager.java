@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class StudentManager {
-    private final String filename = "src/main/java/StudentAuthGUI/students.txt";
+    private final String filename = "src" + File.separator + "main" + File.separator + "java" + File.separator + "StudentAuthGUI" + File.separator + "students.txt";
 
     public boolean registerStudent(Student student) {
         //check for duplicate matric number
@@ -53,4 +53,3 @@ public class StudentManager {
         return false;
     }
 }
-
